@@ -35,7 +35,7 @@
     "watch-css-dist": "nodemon --watch dist/css/ --ext css --ignore \"dist/css/*.rtl.*\" --exec \"npm run css-rtl\"",
     "watch-js-main": "nodemon --watch src/ts/ --ext ts --exec \"npm-run-all js-lint js-compile\"",
     "watch-assets": "nodemon --watch src/assets/ --exec \"npm run assets\"",
-    "build": "your-build-command"
+    "build": "rollup --config src/config/rollup.config.js"
   },
   "keywords": [
     "css",
