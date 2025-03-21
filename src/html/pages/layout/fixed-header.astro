@@ -1,15 +1,18 @@
 ---
+title: "AdminLTE 4 | Fixed Header Layout"
+description: "A fixed header layout example"
+---
+
 import Head from "@components/_head.astro";
 import Footer from "@components/dashboard/_footer.astro";
 import Topbar from "@components/dashboard/_topbar.astro";
 import Sidenav from "@components/dashboard/_sidenav.astro";
 import Scripts from "@components/_scripts.astro";
 
-const title = "AdminLTE 4 | Fixed Header";
+const title = "AdminLTE 4 | Fixed Header Layout";
 const path = "../../../dist";
 const mainPage = "layout";
 const page = "fixed-header";
----
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +22,7 @@ const page = "fixed-header";
   </head>
   <!--end::Head-->
   <!--begin::Body-->
-  <body class="fixed-header sidebar-expand-lg bg-body-tertiary">
+  <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <Topbar path={path} />
@@ -33,13 +36,13 @@ const page = "fixed-header";
             <!--begin::Row-->
             <div class="row">
               <div class="col-sm-6">
-                <h3 class="mb-0">Fixed Header</h3>
+                <h3 class="mb-0">Fixed Header Layout</h3>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Fixed Header
+                    Fixed Header Layout
                   </li>
                 </ol>
               </div>
@@ -55,44 +58,24 @@ const page = "fixed-header";
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-12">
-                <!-- Default box -->
-                <div class="card">
+              <div class="col-md-12">
+                <div class="card mb-4">
                   <div class="card-header">
-                    <h3 class="card-title">Title</h3>
-
-                    <div class="card-tools">
-                      <button
-                        type="button"
-                        class="btn btn-tool"
-                        data-lte-toggle="card-collapse"
-                        title="Collapse"
-                      >
-                        <i data-lte-icon="expand" class="bi bi-plus-lg"></i>
-                        <i data-lte-icon="collapse" class="bi bi-dash-lg"></i>
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-tool"
-                        data-lte-toggle="card-remove"
-                        title="Remove"
-                      >
-                        <i class="bi bi-x-lg"></i>
-                      </button>
-                    </div>
+                    <h3 class="card-title">Example Content</h3>
                   </div>
+                  <!-- /.card-header -->
                   <div class="card-body">
-                    Start creating your amazing application!
+                    <p>This is an example of a fixed header layout.</p>
                   </div>
                   <!-- /.card-body -->
-                  <div class="card-footer">Footer</div>
-                  <!-- /.card-footer-->
                 </div>
                 <!-- /.card -->
               </div>
+              <!-- /.col -->
             </div>
             <!--end::Row-->
           </div>
+          <!--end::Container-->
         </div>
         <!--end::App Content-->
       </main>

@@ -1,11 +1,25 @@
 {
   "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
   "extends": [
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:unicorn/recommended",
     "xo",
-    "xo/browser"
+    "xo/browser",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
   ],
   "rules": {
     "arrow-body-style": "off",
@@ -20,20 +34,6 @@
       {
         "MemberExpression": "off",
         "SwitchCase": 1
-      }
-    ],
-    "max-params": [
-      "warn",
-      5
-    ],
-    "multiline-ternary": [
-      "error",
-      "always-multiline"
-    ],
-    "new-cap": [
-      "error",
-      {
-        "properties": false
       }
     ],
     "no-console": "error",
