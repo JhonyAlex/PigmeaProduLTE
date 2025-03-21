@@ -1,0 +1,3 @@
+import { Head } from 'ruta/del/componente/Head'; // Asegúrate de que la ruta sea correcta
+
+// ...existing code...
